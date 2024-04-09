@@ -29,6 +29,10 @@ contract hiCore is AccessControl{
         PROJECTScontract = _projects;
     }
 
+    function updateDonations(address _donations)external onlyRole(DEFAULT_ADMIN_ROLE){
+        DONATIONScontract = _donations;
+    }
+
     function updateMembers(address _members)external onlyRole(DEFAULT_ADMIN_ROLE){
         MEMBERScontract = _members;
     }
